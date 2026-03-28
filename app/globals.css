@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --hh-bg: #0B0907;
+  --hh-red: #A82020;
+  --hh-red-bright: #D43030;
+  --hh-amber: #D4A04A;
+  --hh-amber-dim: #9A7535;
+  --hh-cream: #F2E8D8;
+  --hh-cream-dim: #C0B49E;
+  --hh-charcoal: #1C1610;
+}
+
+@theme inline {
+  --color-hh-bg: #0B0907;
+  --color-hh-red: #A82020;
+  --color-hh-red-bright: #D43030;
+  --color-hh-amber: #D4A04A;
+  --color-hh-amber-dim: #9A7535;
+  --color-hh-cream: #F2E8D8;
+  --color-hh-cream-dim: #C0B49E;
+  --color-hh-charcoal: #1C1610;
+  --font-antique: 'Zen Antique', serif;
+  --font-gothic: 'Zen Kaku Gothic New', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--hh-bg);
+  color: var(--hh-cream);
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Warm glow keyframe */
+@keyframes lantern-pulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.6; }
+}
+
+/* Section heading */
+.section-heading {
+  font-family: 'Zen Antique', serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
+/* Separator */
+.fire-line {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--hh-red) 20%,
+    var(--hh-amber) 50%,
+    var(--hh-red) 80%,
+    transparent 100%
+  );
+  opacity: 0.3;
+}
+
+/* Phone CTA */
+.phone-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2.5rem;
+  border: 1px solid var(--hh-amber);
+  color: var(--hh-cream);
+  font-family: 'Zen Antique', serif;
+  font-size: 1.25rem;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.phone-cta:hover {
+  background: rgba(212, 160, 74, 0.1);
+  border-color: var(--hh-cream);
+}
+
+/* Mobile phone bar */
+@media (max-width: 768px) {
+  .mobile-phone-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9998;
+    background: var(--hh-red);
+    border-top: 1px solid rgba(212, 160, 74, 0.3);
+    padding: 0.75rem;
+  }
+}
+
+/* Navigation */
+.nav-link {
+  font-family: 'Zen Antique', serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  color: var(--hh-cream-dim);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.nav-link:hover {
+  color: var(--hh-amber);
+}

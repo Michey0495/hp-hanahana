@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hp-hanahana.vercel.app/sitemap.xml

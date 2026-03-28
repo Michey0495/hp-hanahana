@@ -1,0 +1,13 @@
+{
+  "name": "焼肉・居酒屋 hanahana HP",
+  "description": "北海道釧路市末広町の焼肉・居酒屋のデモサイト",
+  "url": "https://hp-hanahana.vercel.app",
+  "provider": {
+    "organization": "EZOAI",
+    "url": "https://ezoai.jp"
+  },
+  "version": "1.0.0",
+  "capabilities": {
+    "pages": ["/", "/menu", "/info", "/contact"]
+  }
+}
