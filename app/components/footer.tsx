@@ -24,10 +24,10 @@ export function Footer() {
           </nav>
         </div>
         <div className="text-center space-y-2">
-          <p className="font-gothic text-hh-cream-dim/30 text-[10px] tracking-wider">
+          <p className="font-gothic text-hh-cream-dim/50 text-[10px] tracking-wider">
             ※掲載写真はイメージです。実際の料理・店内とは異なります。
           </p>
-          <p className="font-gothic text-hh-cream-dim/25 text-xs tracking-wider">
+          <p className="font-gothic text-hh-cream-dim/40 text-xs tracking-wider">
             本サイトはEZOAIによるデモ制作です
           </p>
         </div>

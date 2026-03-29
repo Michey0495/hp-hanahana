@@ -31,13 +31,14 @@ export default function Home() {
               北海道釧路市末広町
             </p>
 
-            <h1 className="font-antique text-5xl md:text-7xl lg:text-8xl text-hh-cream font-normal tracking-wider leading-tight">
-              hanahana
+            <h1 className="font-antique text-hh-cream font-normal tracking-wider leading-tight">
+              <span className="block text-lg md:text-xl text-hh-cream/50 tracking-[0.2em] mb-2">
+                焼肉・居酒屋
+              </span>
+              <span className="block text-5xl md:text-7xl lg:text-8xl">
+                hanahana
+              </span>
             </h1>
-
-            <p className="font-antique text-hh-cream/50 text-lg md:text-xl tracking-[0.2em] mt-3">
-              焼肉・居酒屋
-            </p>
 
             <p className="font-gothic text-hh-cream/70 text-base md:text-lg tracking-[0.15em] mt-8 max-w-md">
               肉の旨み、酒の温もり。

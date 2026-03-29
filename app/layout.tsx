@@ -48,7 +48,7 @@ const jsonLd = {
     streetAddress: "末広町5-3-2",
     addressLocality: "釧路市",
     addressRegion: "北海道",
-    postalCode: "",
+    postalCode: "085-0015",
     addressCountry: "JP",
   },
   geo: {
